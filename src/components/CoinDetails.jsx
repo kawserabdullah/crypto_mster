@@ -34,7 +34,8 @@ const CoinDetails = () => {
   const [chartArray, setChartArray] = useState([]);
 
   const currencySymbol =
-    currency === "inr" ? "₹" : currency === "eur" ? "€" : "$";
+    currency === "inr" ? "₹" : currency === "eur" ? "€" :"$";
+    // currency === "inr" ? "₹" : currency === "eur" ? "€" : currency === "usd" ? "$" : "৳";
 
   const btns = ["24h", "7d", "14d", "30d", "60d", "200d", "1y", "max"];
 
@@ -125,9 +126,11 @@ const CoinDetails = () => {
 
           <RadioGroup value={currency} onChange={setCurrency} p={"8"}>
             <HStack spacing={"4"}>
-              <Radio value={"inr"}>INR</Radio>
               <Radio value={"usd"}>USD</Radio>
+              <Radio value={"inr"}>INR</Radio>
               <Radio value={"eur"}>EUR</Radio>
+              {/* <Radio value={"bdt"}>BDT</Radio> */}
+              
             </HStack>
           </RadioGroup>
 

@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Text, VStack } from "@chakra-ui/react";
+import { Avatar, Box, Stack, Text, VStack, border } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -12,6 +12,11 @@ const Footer = () => {
       minH={"48"}
       px={"16"}
       py={["16", "8"]}
+      css={{
+        "&":{
+          borderTop:"2px soild #FEEAA6"
+        }
+      }}
     >
       <Stack direction={["column", "row"]} h={"full"} alignItems={"center"}>
         <VStack w={"full"} alignItems={["center", "flex-start"]}>

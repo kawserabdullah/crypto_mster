@@ -48,7 +48,7 @@ const Home = () => {
         color={"whiteAlpha.700"}
         mt={"-20"}
       >
-        CRYPTO MASTER
+        CRYPTO TRACKER
       </Text>
     </Box>
   );
